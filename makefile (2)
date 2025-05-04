@@ -1,0 +1,8 @@
+Program: Bil.o del_bil.o
+	gcc -o Program Bil.o del_bil.o
+
+Bil.o: Bil.c Bil.h
+	gcc -c Bil.c
+
+del_bil.o: del_bil.c Bil.h
+	gcc -c del_bil.c
